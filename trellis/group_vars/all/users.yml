@@ -8,13 +8,13 @@ users:
       - "{{ web_group }}"
     keys:
       - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
-       - https://github.com/raz818.keys
+      - https://github.com/raz818.keys
   - name: "{{ admin_user }}"
     groups:
       - sudo
     keys:
       - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
-       - https://github.com/raz818.keys
+      - https://github.com/raz818.keys
 
 web_user: web
 web_group: www-data
